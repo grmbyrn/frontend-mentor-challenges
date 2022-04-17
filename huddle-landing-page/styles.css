@@ -1,0 +1,213 @@
+:root{
+    /* COLORS */
+
+    --clr-violet: hsl(257, 40%, 49%);
+    --clr-soft-magenta: hsl(300, 69%, 71%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* min-height: 100vh; */
+    font-family: 'Poppins', sans-serif;
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container{
+    width: 375px;
+    background: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: var(--clr-violet);
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+}
+
+.logo{
+    width: 120px;
+    margin: 2.375rem 13.4375rem 3.125rem 0px;
+}
+
+.screens{
+    width: 296px;
+    margin-bottom: 3.75rem;
+}
+
+.text-wrapper h1{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.text-wrapper p{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2.1875rem;
+}
+
+.text-wrapper a{
+    padding: .75rem 4.6875rem;
+    background-color: hsla(0, 0%, 100%, 1);
+    text-decoration: none;
+    color: var(--clr-violet);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+    border-radius: 1.25rem;
+    margin-bottom: 4.6875rem;
+}
+
+.text-wrapper a:hover,
+.text-wrapper a:focus{
+        background-color: var(--clr-soft-magenta);
+
+}
+
+.text-wrapper a:hover,
+.text-wrapper a:focus,
+.fab:hover,
+.fab:focus{
+    cursor: pointer;
+    color: hsla(0, 0%, 100%, 1);
+    transition: all 1s ease-in-out;
+}
+
+.footer{
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+    height: 1.75rem;
+}
+
+.socials-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.fab{
+    color: hsla(0, 0%, 100%, 1);
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .625rem;
+    text-decoration: none;
+}
+
+.fab:hover,
+.fab:focus{
+    color: var(--clr-soft-magenta);
+    border: 1px solid var(--clr-soft-magenta);
+}
+
+@media (min-width: 800px){
+    .container{
+        width: 600px;
+        background: url('./images/bg-desktop.svg');
+        background-repeat: no-repeat;
+        background-color: var(--clr-violet);
+    }
+
+    .logo{
+        width: 200px;
+        margin-right: 400px;
+        margin-left: 30px;
+        margin-bottom: 1.5rem;
+    }
+
+    .screens{
+        width: 450px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .container{
+        display: grid;
+        grid-template-areas: 
+            'header .'
+            'content text'
+            '. footer';
+        grid-template-rows: 150px 400px 150px;
+        width: 1440px;
+        background: url('./images/bg-desktop.svg');
+        background-repeat: no-repeat;
+        background-color: var(--clr-violet);
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .logo-wrapper{
+        grid-area: header;
+    }
+
+    .img-wrapper{
+        grid-area: content;
+    }
+
+    .logo{
+        width: 300px;
+        margin-right: 300px;
+    }
+
+    .screens{
+        width: 600px;
+        object-fit: contain;
+    }
+
+    .text-wrapper{
+        grid-area: text;
+        text-align: left;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .text-wrapper h1{
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+    }
+    
+    .text-wrapper p{
+        font-size: 1rem;
+        line-height: 1.6875;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+
+    .socials-wrapper{
+        margin-right: 6.25rem;
+    }
+}
+
+@media (min-width: 1190px){
+    .text-wrapper{
+        grid-area: text;
+        text-align: left;
+        margin-left: 2.5rem;
+        margin-right: 5.3125rem;
+    }
+
+    .text-wrapper h1{
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+    }
+
+    .text-wrapper p{
+        font-size: 1.125rem;
+        line-height: 1.6875rem;
+    }
+}

@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.card-container{
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    height: 596px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 1rem 2.5rem 2.5rem hsl(218, 54%, 9%), -1rem 2.5rem 2.5rem hsl(218, 54%, 9%), 3rem 4rem hsl(216, 54%, 11%), -3rem -4rem hsl(216, 54%, 11%);
+}
+
+.card-hero {
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .card-hero-img {
+    display: block;
+    height: auto;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: cyan;
+    border-radius: 10px;
+  }
+  
+  .card-hero:hover .card-overlay {
+    opacity: .6;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .card-overlay-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .card-overlay-icon:hover {
+    color: white;
+    opacity: 1;
+  }
+
+.card-title{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.card-title:hover,
+.card-title:focus{
+    color: #00FFF8;
+    cursor: pointer;
+}
+
+.card-desc{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #8BACD9;
+}
+
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #2E405A;
+    align-items: center;
+}
+
+.card-info-item{
+    display: flex;
+    align-items: center;
+}
+
+.card-eth{
+    color: #00FFF8;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.card-time-left{
+    color: #8BACD9;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.icon{
+    height: 16px;
+    padding-right: 5px;
+}
+
+.card-creator{
+    display: flex;
+    align-items: center;
+}
+
+.card-avatar{
+    border: 1px solid #FFFFFF;
+    height: 33px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card-creator{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8BACD9;
+    height: 5rem;
+}
+
+.card-creator-name{
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.card-creator-name:hover,
+.card-creator-name:focus{
+    cursor: pointer;
+    color: #00FFF8;
+}
