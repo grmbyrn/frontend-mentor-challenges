@@ -1,0 +1,135 @@
+:root{
+    /* Colors */
+
+    /* Primary */
+    --clr-dark-cyan: hsl(185, 75%, 39%);
+    --clr-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --clr-dark-grayish-blue: hsl(227, 10%, 46%);
+    
+    /* Neutral */
+    --clr-dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--clr-dark-cyan);
+    text-align: center;
+}
+
+.top,
+.bottom{
+    position: absolute;
+}
+
+.top{
+    transform: translate(-35%, -55%);
+}
+
+.bottom{
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 65%);
+    opacity: .3;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 326px;
+    background-color: white;
+    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+    border-radius: 15px;
+}
+
+.hero{
+    background-image: url("./images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 85px;
+    border-radius: 15px;
+}
+
+.hero-img{
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+.user{
+    border-bottom: 2px solid #E8E9EC;
+    margin-bottom: 24px;
+}
+
+.name{
+    margin-bottom: 8px;
+}
+
+.age{
+    padding-left: 8px;
+}
+
+.location{
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.location,
+.metric{
+    font-weight: 400;
+}
+
+.age,
+.location,
+.metric{
+    color: hsla(228, 10%, 47%, 1);
+}
+
+.wrapper{
+    display: flex;
+}
+
+.stats-wrapper{
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    margin-bottom: 27px;
+}
+
+.num{
+    margin-bottom: 9px;
+}
+
+.metric{
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+@media (max-width: 706px){
+    .top{
+        transform: translate(-70%, -55%);
+    }
+
+    .bottom{
+        transform: translate(70%, 55%);
+    }
+}
+
+@media (max-height: 700px){
+    .bottom{
+        transform: translate(70%, 75%);
+    }
+}

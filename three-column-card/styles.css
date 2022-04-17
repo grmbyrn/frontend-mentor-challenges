@@ -1,0 +1,141 @@
+:root{
+    /* Colors */
+
+    /* Primary */
+
+    --clr-bright-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --clr-very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0 auto;
+    font-size: 15px;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 20.4375rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.125rem;
+}
+
+.car-img,
+.heading,
+.content,
+.learn-more{
+    margin-bottom: 2rem;
+}
+
+.flex-item-one{
+    background-color: var(--clr-bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.flex-item-two{
+    background-color: var(--clr-dark-cyan);
+}
+
+.flex-item-three{
+    background-color: var(--clr-very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.flex-item-one,
+.flex-item-two,
+.flex-item-three{
+    padding: 1.875rem 2.5rem 3.125rem 2.5rem;
+}
+
+.heading{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--clr-transparent-white);
+    font-size: 40px;
+    padding: -30px 0 -30px 0;
+}
+
+.content{
+    color: var(--clr-very-light-gray);
+    padding-bottom: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.learn-more{
+    height: 2.5rem;
+    width: 140px;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    border-radius: 50px;
+    transition: ease-in 500ms;
+    font-weight: 400;
+}
+
+.learn-more:hover,
+.learn-more:focus{
+    cursor: pointer;
+    color: var(--clr-very-light-gray);
+    border: 2px solid var(--clr-very-light-gray);
+}
+
+.sedan{
+    color: var(--clr-bright-orange);
+}
+
+.suv{
+    color: var(--clr-dark-cyan);
+}
+
+.luxury{
+    color: var(--clr-very-dark-cyan);
+}
+
+.sedan:hover,
+.sedan:focus{
+    background-color: var(--clr-bright-orange);
+}
+
+.suv:hover,
+.suv:focus{
+    background-color: var(--clr-dark-cyan);
+}
+
+.luxury:hover,
+.luxury:focus{
+    background-color: var(--clr-very-dark-cyan);
+}
+
+@media (min-width: 800px){
+    .container{
+        flex-direction: row;
+        width: 920px;
+        height: 500px;
+    }
+
+    .content{
+        padding-bottom: 4.375rem;
+    }
+
+    .flex-item-one{
+        background-color: var(--clr-bright-orange);
+        border-radius: 10px 0 0 10px;
+    }
+
+    .flex-item-three{
+        border-radius: 0 10px 10px 0;
+    }
+}
