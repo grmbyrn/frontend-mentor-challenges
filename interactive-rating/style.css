@@ -1,0 +1,158 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+body, h2, p{
+    margin: 0;
+}
+
+h1, h2{
+    font-weight: 700;
+    color: #fff;
+}
+
+body{
+    min-height: 100vh;
+    line-height: 1.5;
+    background-color: hsl(216, 12%, 8%);
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+button{
+    background-color: transparent;
+    border: transparent;
+}
+
+.box-container{
+    max-width: 25rem;
+    background-color: hsl(213, 19%, 18%);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.box-container>*:not(div:first-child){
+    margin-top: 1rem;
+}
+
+.img-container,
+.rating-btn{
+    width: 2rem;
+    aspect-ratio: 2;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-container p{
+    color: #969FAD;
+}
+
+.thank-you-container .rating-result{
+    color: #FC7614;
+    background: hsla(217, 12%, 54%, .1);
+    padding: 4px 19px;
+}
+
+.img-container{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background: hsla(217, 12%, 54%, .1);
+}
+
+.rating-btn-container{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-btn{
+    width: 2.5rem;
+    color: #7C8798;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: hsla(217, 12%, 54%, .1);
+}
+
+.rating-btn:hover{
+    background-color: hsl(216, 12%, 54%);
+    font-weight: 700;
+    color: #fff;
+}
+
+.rating-btn[aria-selected='true']{
+    background-color: orange;
+    font-weight: 700;
+    color: #fff;
+}
+
+.submit-btn{
+    width: 100%;
+    border-radius: 1.5rem;
+    background-color: orange;
+    padding-block: 0.35rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 11px;
+}
+
+.submit-btn:hover{
+    background-color: white;
+    color: orange;
+    font-weight: 700;
+}
+
+
+.thank-you-container{
+    padding-inline: 2.5em;
+    text-align: center;
+}
+
+.thank-you-container img{
+    margin-inline: auto;
+    max-width: 50%;
+}
+
+.thank-you-container p{
+    font-size: 0.78rem;
+}
+
+.rating-result{
+    background-color: hsl(213, 19%, 18%);
+    color: orange;
+    max-width: 54%;
+    padding-block: 0.2em;
+    margin-inline: auto;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 280px){
+    .box-container{
+        max-width: 17rem;
+        margin-inline: auto;
+    }
+
+    .rating-result{
+        max-width: 75%;
+    }
+}
