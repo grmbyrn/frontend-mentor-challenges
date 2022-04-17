@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/styles.css">
+  <title>Frontend Mentor | Article preview component</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="img-wrapper">
+      <img class="hero-img" src="./images/drawers.jpg" alt="green drawer in front of white wall">
+    </div>
+
+    <main class="text-wrapper">
+      <p class="upper-text">Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home
+      </p>
+
+      <p class="lower-text">Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+      </p>
+
+      <div class="user-wrapper">
+        <img class="user-img" src="./images/avatar-michelle.jpg" alt="user's profile photo">
+        <div class="user-details">
+          <p class="username">Michelle Appleton</p>
+          <p class="date">28 Jun 2020</p>
+        </div>
+        <button id="open-modal" class="btn"><img class="icon share-icon" src="./images/icon-share.svg" alt="share icon"></button>
+      </div>
+    </main>
+    
+    <footer id="overlay" class="overlay">
+      <div class="modal">
+        <a href="#" class="share">Share</p>
+        <a href="#">
+          <img class="icon" src="./images/icon-facebook.svg" alt="facebook icon">
+        </a>
+        <a href="#">
+          <img class="icon" src="./images/icon-twitter.svg" alt="twitter icon">
+        </a>
+        <a href="#">
+          <img class="icon" src="./images/icon-pinterest.svg" alt="pinterest icon">
+        </a>
+        <button id="close-modal" class="btn"><img class="share-icon" src="./images/icon-share.svg" alt="share icon"></button>
+    </div>
+    </footer>
+  </div>
+
+  <script src='./src/index.js'></script>
+</body>
+</html>
